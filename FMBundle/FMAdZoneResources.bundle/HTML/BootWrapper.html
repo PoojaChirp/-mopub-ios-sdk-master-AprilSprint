@@ -1,0 +1,16 @@
+<html>
+    
+    <head>
+        <script type="application/javascript">
+            // JS-Core v0.1.0
+            
+            !function(e){"use strict";function o(e){this.scheme=e}o.prototype={send:function(o,n){var t=e.document.createElement("iframe");n=n||[],t.setAttribute("src",this.scheme+"://"+o+"?"+n.join("&")),e.document.documentElement.appendChild(t),t.parentNode.removeChild(t),t=null}},Object.defineProperty(e,"URLMessageHandler",{value:o})}(this),function(e){"use strict";function o(e){return function(){n[e].apply(n,arguments),t.send(e,"message="+JSON.stringify(arguments))}}var n=e.console,t=new e.URLMessageHandler("log");e.console={},e.console.log=o("log"),e.console.warn=o("warn"),e.console.info=o("info"),e.console.error=o("error"),e.console.debug=o("debug"),e.console.dir=e.console.dir||function(){},e.console.trace=e.console.trace||function(){},e.console.clear=e.console.clear||function(){},e.console.count=e.console.count||function(){},e.console.group=e.console.group||function(){},e.console.assert=e.console.assert||function(){},e.console.groupEnd=e.console.groupEnd||function(){},e.console.groupCollapsed=e.console.groupCollapsed||function(){}}(this),function(e){"use strict";function o(){var o=e.localStorage;try{var n="#"+Math.random().toString(16).substring(2);o.setItem(n,Math.random()),o.removeItem(n)}catch(e){throw this.messageHandler.send("bootFailed",["errorCode=42"]),new Error("Local Storage must be enabled.")}}function n(e){if("object"!=typeof e||null===e)throw this.messageHandler.send("bootFailed",["errorCode=42"]),new Error("There were no options provided");if(!e.idfa)throw this.messageHandler.send("bootFailed",["errorCode=42"]),new Error("An invalid IDFA was provided.");if(!e.sdk)throw this.messageHandler.send("bootFailed",["errorCode=42"]),new Error("An invalid SDK String was provided.");if(!e.model)throw this.messageHandler.send("bootFailed",["errorCode=42"]),new Error("An invalid Model String was provided.")}function t(o,n){var t=e.localStorage,s=t.getItem(o);s?(s=JSON.parse(e.atob(s))).push(n.target.responseText):s=[n.target.responseText],t.setItem(o,e.btoa(JSON.stringify(s)))}Object.defineProperty(e,"fm",{configurable:!0,value:{boot:function(s){this.messageHandler=new e.URLMessageHandler("log"),o.call(this),n.call(this,s);var r=new e.XMLHttpRequest;r.open("GET",s.manifestURL||"https://adsdk.s3-us-west-1.amazonaws.com/manifest.json",!1),r.setRequestHeader("Content-Type","application/json"),r.onload=function(o){if(o.target.status>=400)throw this.messageHandler.send("bootFailed",["errorCode=42"]),new Error("Invalid manifest response");JSON.parse(o.target.responseText).precache.forEach(function(o){var n=new e.XMLHttpRequest;n.open("GET",o,!1),n.setRequestHeader("Content-Type","application/javascript"),n.onload=t.bind(null,o),n.send()}),this.messageHandler.send("bootSuccess")}.bind(this),r.send()},load:function(){}}})}(this);
+            
+            fm.boot({'idfa': 'idfa', 'sdk': 'sdk', 'model': '1234'});
+            
+            </script>
+    </head>
+    
+    <body></body>
+    
+</html>
