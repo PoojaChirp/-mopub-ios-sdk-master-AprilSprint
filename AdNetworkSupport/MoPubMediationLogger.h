@@ -10,6 +10,11 @@
 @interface MoPubMediationLogger : NSObject
 
 - (instancetype)initWithNetworkType:(Network *)networkType AndAdFormat:(AdFormat *)adFormat;
+
+- (Class)setUpLogMessage :(NSDictionary *)loggers;
+//-(void)log;
+
+
 @end
 
 

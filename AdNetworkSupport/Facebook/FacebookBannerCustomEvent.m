@@ -10,6 +10,7 @@
 
 #import "MPInstanceProvider.h"
 #import "MPLogging.h"
+#import "MoPubMediationLogger.h"
 
 @interface MPInstanceProvider (FacebookBanners)
 
@@ -55,8 +56,16 @@
      * Facebook Banner ads can accept arbitrary widths for given heights of 50 and 90. We convert these sizes
      * to Facebook's constants and set the fbAdView's size to the intended size ("size" passed to this method).
      */
+
+    MoPubMediationLogger *LOGGER = [[MoPubMediationLogger alloc] initWithNetworkType:Facebook AndAdFormat:Banner];
+
+    [ LOGGER dictionaryWithValuesForKeys:@'AD_REQUESTED'];
+   // id val = dictionary[""];
+  //  LOGGER.log(@"Some message");
+
      [FBAdSettings addTestDevice:[FBAdSettings testDeviceHash]];
-    
+
+
     FBAdSize fbAdSize;
     if (CGSizeEqualToSize(size, kFBAdSize320x50.size)) {
         fbAdSize = kFBAdSize320x50;
@@ -100,6 +109,7 @@
     self.fbAdView.frame = fbAdFrame;
     [FBAdSettings setMediationService:[NSString stringWithFormat:@"MOPUB_%@", MP_SDK_VERSION]];
     [self.fbAdView loadAd];
+
 }
 
 - (void)dealloc
