@@ -11,9 +11,7 @@
 
 - (instancetype)initWithNetworkType:(Network *)networkType AndAdFormat:(AdFormat *)adFormat;
 
-- (Class)setUpLogMessage :(NSDictionary *)loggers;
-//-(void)log;
-
+- (void)log:(NSString *)event;
 
 @end
 
