@@ -421,6 +421,7 @@
 		27655E46208083FD00E3B952 /* MPViewabilityTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 27655CBE208083FC00E3B952 /* MPViewabilityTracker.m */; };
 		27655E47208083FD00E3B952 /* MPWebView+Viewability.m in Sources */ = {isa = PBXBuildFile; fileRef = 27655CC0208083FC00E3B952 /* MPWebView+Viewability.m */; };
 		27655E48208083FD00E3B952 /* MPWebView+Viewability.m in Sources */ = {isa = PBXBuildFile; fileRef = 27655CC0208083FC00E3B952 /* MPWebView+Viewability.m */; };
+		2795E5FE208AA35000BAFECF /* MoPubSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2795E5FD208AA35000BAFECF /* MoPubSampleAppTests.m */; };
 		279A2BC6203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC1203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m */; };
 		279A2BC7203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC1203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m */; };
 		279A2BC8203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC3203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m */; };
@@ -610,6 +611,16 @@
 		F4066EA6A4CF18D49F41C845 /* MoPubMediationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4066B178CAE828F0EA62778 /* MoPubMediationLogger.m */; };
 		F4066F42BFDE1912DC335C5D /* MoPubMediationLoggerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F406627F561E5FA953834139 /* MoPubMediationLoggerConstants.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2795E600208AA35000BAFECF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE23238716F78A17002C2082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE23238E16F78A17002C2082;
+			remoteInfo = MoPubSampleApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		270ED3CD2003E8DB008F8C8A /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
@@ -1030,6 +1041,9 @@
 		27655CBE208083FC00E3B952 /* MPViewabilityTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPViewabilityTracker.m; sourceTree = "<group>"; };
 		27655CBF208083FC00E3B952 /* MPWebView+Viewability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MPWebView+Viewability.h"; sourceTree = "<group>"; };
 		27655CC0208083FC00E3B952 /* MPWebView+Viewability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MPWebView+Viewability.m"; sourceTree = "<group>"; };
+		2795E5FB208AA35000BAFECF /* MoPubSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoPubSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2795E5FD208AA35000BAFECF /* MoPubSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoPubSampleAppTests.m; sourceTree = "<group>"; };
+		2795E5FF208AA35000BAFECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		279A2BC0203E2505009B8DB9 /* TapjoyGlobalMediationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapjoyGlobalMediationSettings.h; sourceTree = "<group>"; };
 		279A2BC1203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapjoyGlobalMediationSettings.m; sourceTree = "<group>"; };
 		279A2BC2203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapjoyInterstitialCustomEvent.h; sourceTree = "<group>"; };
@@ -1232,6 +1246,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2795E5F8208AA35000BAFECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46B3341119F075680078078A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1929,6 +1950,15 @@
 			path = MOAT;
 			sourceTree = "<group>";
 		};
+		2795E5FC208AA35000BAFECF /* MoPubSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				2795E5FD208AA35000BAFECF /* MoPubSampleAppTests.m */,
+				2795E5FF208AA35000BAFECF /* Info.plist */,
+			);
+			path = MoPubSampleAppTests;
+			sourceTree = "<group>";
+		};
 		279A2BBF203E2505009B8DB9 /* TapJoy */ = {
 			isa = PBXGroup;
 			children = (
@@ -2153,6 +2183,7 @@
 				46B3345119F076E60078078A /* MoPubSampleApp with CEs */,
 				5755DA591AAA4E2300DC32EA /* AdNetworkSupport */,
 				AE8E1D4E1729AA450051FA6C /* Assets */,
+				2795E5FC208AA35000BAFECF /* MoPubSampleAppTests */,
 				AE23239116F78A17002C2082 /* Frameworks */,
 				AE23239016F78A17002C2082 /* Products */,
 				FE3AFE7A16D20E257B2427B2 /* Pods */,
@@ -2164,6 +2195,7 @@
 			children = (
 				AE23238F16F78A17002C2082 /* MoPubSampleApp.app */,
 				46B3343A19F075680078078A /* MoPubSampleApp with CEs.app */,
+				2795E5FB208AA35000BAFECF /* MoPubSampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2323,6 +2355,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2795E5FA208AA35000BAFECF /* MoPubSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2795E604208AA35000BAFECF /* Build configuration list for PBXNativeTarget "MoPubSampleAppTests" */;
+			buildPhases = (
+				2795E5F7208AA35000BAFECF /* Sources */,
+				2795E5F8208AA35000BAFECF /* Frameworks */,
+				2795E5F9208AA35000BAFECF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2795E601208AA35000BAFECF /* PBXTargetDependency */,
+			);
+			name = MoPubSampleAppTests;
+			productName = MoPubSampleAppTests;
+			productReference = 2795E5FB208AA35000BAFECF /* MoPubSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		46B3339D19F075680078078A /* MoPubSampleApp with CEs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46B3343719F075680078078A /* Build configuration list for PBXNativeTarget "MoPubSampleApp with CEs" */;
@@ -2371,6 +2421,12 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = MoPub;
 				TargetAttributes = {
+					2795E5FA208AA35000BAFECF = {
+						CreatedOnToolsVersion = 9.4;
+						DevelopmentTeam = 4S7XS533V3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AE23238E16F78A17002C2082;
+					};
 					46B3339D19F075680078078A = {
 						DevelopmentTeam = 4S7XS533V3;
 						ProvisioningStyle = Automatic;
@@ -2395,11 +2451,19 @@
 			targets = (
 				AE23238E16F78A17002C2082 /* MoPubSampleApp */,
 				46B3339D19F075680078078A /* MoPubSampleApp with CEs */,
+				2795E5FA208AA35000BAFECF /* MoPubSampleAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2795E5F9208AA35000BAFECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46B3342419F075680078078A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2599,6 +2663,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2795E5F7208AA35000BAFECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2795E5FE208AA35000BAFECF /* MoPubSampleAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46B3339E19F075680078078A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -3057,6 +3129,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		2795E601208AA35000BAFECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE23238E16F78A17002C2082 /* MoPubSampleApp */;
+			targetProxy = 2795E600208AA35000BAFECF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		AE23239B16F78A17002C2082 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -3069,6 +3149,74 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2795E602208AA35000BAFECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4S7XS533V3;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = MoPubSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mopub.framework.MoPubSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoPubSampleApp.app/MoPubSampleApp";
+			};
+			name = Debug;
+		};
+		2795E603208AA35000BAFECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4S7XS533V3;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = MoPubSampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mopub.framework.MoPubSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoPubSampleApp.app/MoPubSampleApp";
+			};
+			name = Release;
+		};
 		46B3343819F075680078078A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 88BFC5A0F589E8F9150E61AC /* Pods-MoPubSampleApp with CEs.debug.xcconfig */;
@@ -3363,6 +3511,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2795E604208AA35000BAFECF /* Build configuration list for PBXNativeTarget "MoPubSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2795E602208AA35000BAFECF /* Debug */,
+				2795E603208AA35000BAFECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46B3343719F075680078078A /* Build configuration list for PBXNativeTarget "MoPubSampleApp with CEs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

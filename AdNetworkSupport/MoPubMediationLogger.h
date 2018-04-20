@@ -9,9 +9,9 @@
 
 @interface MoPubMediationLogger : NSObject
 
-- (instancetype)initWithNetworkType:(Network *)networkType AndAdFormat:(AdFormat *)adFormat;
+- (instancetype)initWithNetworkType:(Network *)networkType AndAdFormat:(AdFormat *)adFormat AndEvent: (Event *)event;
 
-- (void)log:(NSString *)event;
+- (void)log:(NSString *)message;
 
 @end
 

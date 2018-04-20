@@ -383,7 +383,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "239"
             endingLineNumber = "239"
-            landmarkName = "-communicatorDidReceiveAdConfiguration:"
+            landmarkName = "-communicatorDidReceiveAdConfigurations:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
