@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdNetworkSupport/Facebook/FacebookBannerCustomEvent.m"
-            timestampString = "545032904.9388829"
+            timestampString = "546034629.9944119"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
-            landmarkName = "-adView:didFailWithError:"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "-requestAdWithSize:customEventInfo:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AdNetworkSupport/Facebook/FacebookBannerCustomEvent.m"
-            timestampString = "545032904.9389631"
+            timestampString = "546034629.994566"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "-adViewDidLoad:"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "-dealloc"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

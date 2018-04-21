@@ -422,12 +422,6 @@
 		27655E47208083FD00E3B952 /* MPWebView+Viewability.m in Sources */ = {isa = PBXBuildFile; fileRef = 27655CC0208083FC00E3B952 /* MPWebView+Viewability.m */; };
 		27655E48208083FD00E3B952 /* MPWebView+Viewability.m in Sources */ = {isa = PBXBuildFile; fileRef = 27655CC0208083FC00E3B952 /* MPWebView+Viewability.m */; };
 		2795E5FE208AA35000BAFECF /* MoPubSampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2795E5FD208AA35000BAFECF /* MoPubSampleAppTests.m */; };
-		279A2BC6203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC1203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m */; };
-		279A2BC7203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC1203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m */; };
-		279A2BC8203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC3203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m */; };
-		279A2BC9203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC3203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m */; };
-		279A2BCA203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC5203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m */; };
-		279A2BCB203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 279A2BC5203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m */; };
 		279A2C8E20445EE5009B8DB9 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A2C8D20445EE4009B8DB9 /* UnityAds.framework */; };
 		279A2C8F20445EE5009B8DB9 /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 279A2C8D20445EE4009B8DB9 /* UnityAds.framework */; };
 		27AA7DBB20570C8B00A29AD1 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27AA7DBA20570C8B00A29AD1 /* AdColony.framework */; };
@@ -463,9 +457,15 @@
 		27ED4133207B4E33004C84EB /* MMAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED4132207B4E33004C84EB /* MMAdSDK.framework */; };
 		27ED4134207B4E33004C84EB /* MMAdSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED4132207B4E33004C84EB /* MMAdSDK.framework */; };
 		27ED413C207B5320004C84EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27ED413A207B5320004C84EB /* TapjoyResources.bundle */; };
-		27ED413D207B5320004C84EB /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27ED413A207B5320004C84EB /* TapjoyResources.bundle */; };
 		27ED413E207B5320004C84EB /* Tapjoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED413B207B5320004C84EB /* Tapjoy.framework */; };
-		27ED413F207B5320004C84EB /* Tapjoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27ED413B207B5320004C84EB /* Tapjoy.framework */; };
+		27EFC3AA208BD01A00B7AF4E /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFC3A9208BD01A00B7AF4E /* FBAudienceNetwork.framework */; };
+		27EFC3AB208BD01A00B7AF4E /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFC3A9208BD01A00B7AF4E /* FBAudienceNetwork.framework */; };
+		27EFC3AD208BD02C00B7AF4E /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFC3AC208BD02C00B7AF4E /* AppLovinSDK.framework */; };
+		27EFC3AE208BD02C00B7AF4E /* AppLovinSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFC3AC208BD02C00B7AF4E /* AppLovinSDK.framework */; };
+		27EFC3B0208BD03C00B7AF4E /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFC3AF208BD03B00B7AF4E /* AdColony.framework */; };
+		27EFC3B1208BD03C00B7AF4E /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFC3AF208BD03B00B7AF4E /* AdColony.framework */; };
+		27EFC3B6208BD0B800B7AF4E /* Tapjoy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EFC3B3208BD0B800B7AF4E /* Tapjoy.framework */; };
+		27EFC3B8208BD0B800B7AF4E /* TapjoyResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27EFC3B5208BD0B800B7AF4E /* TapjoyResources.bundle */; };
 		27F3B7C7205AED2600FA735D /* FMBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B7C3205AED2500FA735D /* FMBannerCustomEvent.m */; };
 		27F3B7C8205AED2600FA735D /* FMBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B7C3205AED2500FA735D /* FMBannerCustomEvent.m */; };
 		27F3B7C9205AED2600FA735D /* FMInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F3B7C5205AED2600FA735D /* FMInterstitialCustomEvent.m */; };
@@ -1042,12 +1042,6 @@
 		2795E5FB208AA35000BAFECF /* MoPubSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoPubSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2795E5FD208AA35000BAFECF /* MoPubSampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoPubSampleAppTests.m; sourceTree = "<group>"; };
 		2795E5FF208AA35000BAFECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		279A2BC0203E2505009B8DB9 /* TapjoyGlobalMediationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapjoyGlobalMediationSettings.h; sourceTree = "<group>"; };
-		279A2BC1203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapjoyGlobalMediationSettings.m; sourceTree = "<group>"; };
-		279A2BC2203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapjoyInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		279A2BC3203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapjoyInterstitialCustomEvent.m; sourceTree = "<group>"; };
-		279A2BC4203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapjoyRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		279A2BC5203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapjoyRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
 		279A2C8D20445EE4009B8DB9 /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
 		27AA7DBA20570C8B00A29AD1 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdColony.framework; path = ../NetworkSDK/AdColony.framework; sourceTree = "<group>"; };
 		27B0E54F206442D1004B7162 /* AppLovinBannerCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLovinBannerCustomEvent.h; sourceTree = "<group>"; };
@@ -1084,6 +1078,11 @@
 		27ED4132207B4E33004C84EB /* MMAdSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMAdSDK.framework; sourceTree = "<group>"; };
 		27ED413A207B5320004C84EB /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
 		27ED413B207B5320004C84EB /* Tapjoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tapjoy.framework; sourceTree = "<group>"; };
+		27EFC3A9208BD01A00B7AF4E /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		27EFC3AC208BD02C00B7AF4E /* AppLovinSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppLovinSDK.framework; sourceTree = "<group>"; };
+		27EFC3AF208BD03B00B7AF4E /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
+		27EFC3B3208BD0B800B7AF4E /* Tapjoy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Tapjoy.framework; sourceTree = "<group>"; };
+		27EFC3B5208BD0B800B7AF4E /* TapjoyResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TapjoyResources.bundle; sourceTree = "<group>"; };
 		27F3B7C1205AED2500FA735D /* FMInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMInterstitialCustomEvent.h; sourceTree = "<group>"; };
 		27F3B7C2205AED2500FA735D /* FMRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
 		27F3B7C3205AED2500FA735D /* FMBannerCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMBannerCustomEvent.m; sourceTree = "<group>"; };
@@ -1261,12 +1260,12 @@
 				BC789C1D1F7AD333001CE308 /* Security.framework in Frameworks */,
 				27655E42208083FD00E3B952 /* MPUBMoatMobileAppKit.framework in Frameworks */,
 				57881F211BDED96A0046122E /* CoreMotion.framework in Frameworks */,
-				27ED413F207B5320004C84EB /* Tapjoy.framework in Frameworks */,
 				57EF00CE1BD96EB5002634DE /* WebKit.framework in Frameworks */,
 				270ED3CF2003E902008F8C8A /* libxml2.2.tbd in Frameworks */,
 				270ED3D02003E90F008F8C8A /* CoreData.framework in Frameworks */,
 				27655B0F207F311000E3B952 /* IronSource.framework in Frameworks */,
 				4A9350501B66D78900ABF4A3 /* CoreBluetooth.framework in Frameworks */,
+				27EFC3AE208BD02C00B7AF4E /* AppLovinSDK.framework in Frameworks */,
 				46B3348619F0874E0078078A /* MobileCoreServices.framework in Frameworks */,
 				46B3341B19F075680078078A /* CoreTelephony.framework in Frameworks */,
 				46B3348419F087200078078A /* PassKit.framework in Frameworks */,
@@ -1286,8 +1285,10 @@
 				46B3345619F083250078078A /* CoreMedia.framework in Frameworks */,
 				279A2C8F20445EE5009B8DB9 /* UnityAds.framework in Frameworks */,
 				46B3341319F075680078078A /* MessageUI.framework in Frameworks */,
+				27EFC3AB208BD01A00B7AF4E /* FBAudienceNetwork.framework in Frameworks */,
 				27BDA4C5207C88BA0081AA9D /* FBAudienceNetwork.framework in Frameworks */,
 				46B3341419F075680078078A /* AVFoundation.framework in Frameworks */,
+				27EFC3B1208BD03C00B7AF4E /* AdColony.framework in Frameworks */,
 				46B3341519F075680078078A /* AudioToolbox.framework in Frameworks */,
 				270ED3D12003E923008F8C8A /* SafariServices.framework in Frameworks */,
 				46B3341C19F075680078078A /* Foundation.framework in Frameworks */,
@@ -1307,6 +1308,7 @@
 				270ED3CE2003E8DB008F8C8A /* libxml2.2.tbd in Frameworks */,
 				AE0F1FAD171F1D0A00FA3BE6 /* AdSupport.framework in Frameworks */,
 				46B9E8AE17E0D7EE00B78D11 /* AudioToolbox.framework in Frameworks */,
+				27EFC3B6208BD0B800B7AF4E /* Tapjoy.framework in Frameworks */,
 				46B9E8B017E0D7F600B78D11 /* AVFoundation.framework in Frameworks */,
 				270ED3C92003E8CD008F8C8A /* CoreBluetooth.framework in Frameworks */,
 				BC3B986A1E70C85400C77554 /* CoreGraphics.framework in Frameworks */,
@@ -1319,6 +1321,7 @@
 				27655E3D208083FD00E3B952 /* libAvid-mopub-3.6.1.a in Frameworks */,
 				27ED413E207B5320004C84EB /* Tapjoy.framework in Frameworks */,
 				BC3B98691E70C7F500C77554 /* MediaPlayer.framework in Frameworks */,
+				27EFC3AA208BD01A00B7AF4E /* FBAudienceNetwork.framework in Frameworks */,
 				46B9E8B217E0D80400B78D11 /* MessageUI.framework in Frameworks */,
 				270ED3CA2003E8CD008F8C8A /* MobileCoreServices.framework in Frameworks */,
 				27ED4133207B4E33004C84EB /* MMAdSDK.framework in Frameworks */,
@@ -1326,9 +1329,11 @@
 				BC3B98671E70C7E400C77554 /* QuartzCore.framework in Frameworks */,
 				27BDA4C4207C88BA0081AA9D /* FBAudienceNetwork.framework in Frameworks */,
 				279A2C8E20445EE5009B8DB9 /* UnityAds.framework in Frameworks */,
+				27EFC3B0208BD03C00B7AF4E /* AdColony.framework in Frameworks */,
 				270ED3CC2003E8CD008F8C8A /* Social.framework in Frameworks */,
 				AE0F1FAE171F1D1000FA3BE6 /* StoreKit.framework in Frameworks */,
 				BC3B98681E70C7EC00C77554 /* SystemConfiguration.framework in Frameworks */,
+				27EFC3AD208BD02C00B7AF4E /* AppLovinSDK.framework in Frameworks */,
 				AE515FAE171F1BFF0086B464 /* UIKit.framework in Frameworks */,
 				2A86E7F21D710CE60087594C /* WebKit.framework in Frameworks */,
 				27AA7DBB20570C8B00A29AD1 /* AdColony.framework in Frameworks */,
@@ -1955,19 +1960,6 @@
 			path = MoPubSampleAppTests;
 			sourceTree = "<group>";
 		};
-		279A2BBF203E2505009B8DB9 /* TapJoy */ = {
-			isa = PBXGroup;
-			children = (
-				279A2BC0203E2505009B8DB9 /* TapjoyGlobalMediationSettings.h */,
-				279A2BC1203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m */,
-				279A2BC2203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.h */,
-				279A2BC3203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m */,
-				279A2BC4203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.h */,
-				279A2BC5203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m */,
-			);
-			path = TapJoy;
-			sourceTree = "<group>";
-		};
 		27B0E54E206442D1004B7162 /* AppLovin */ = {
 			isa = PBXGroup;
 			children = (
@@ -2041,6 +2033,23 @@
 			isa = PBXGroup;
 			children = (
 				27ED413A207B5320004C84EB /* TapjoyResources.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27EFC3B2208BD0B800B7AF4E /* Tapjoy.embeddedframework */ = {
+			isa = PBXGroup;
+			children = (
+				27EFC3B3208BD0B800B7AF4E /* Tapjoy.framework */,
+				27EFC3B4208BD0B800B7AF4E /* Resources */,
+			);
+			path = Tapjoy.embeddedframework;
+			sourceTree = "<group>";
+		};
+		27EFC3B4208BD0B800B7AF4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27EFC3B5208BD0B800B7AF4E /* TapjoyResources.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -2161,7 +2170,6 @@
 				27BDA4AE207C88A20081AA9D /* Facebook */,
 				27B0E54E206442D1004B7162 /* AppLovin */,
 				27F3B7C0205AED0800FA735D /* Fractional */,
-				279A2BBF203E2505009B8DB9 /* TapJoy */,
 				27B882DD2016369200CECD64 /* Millennial */,
 				F4066B178CAE828F0EA62778 /* MoPubMediationLogger.m */,
 				F4066E2CCE1795CC9CE87791 /* MoPubMediationLogger.h */,
@@ -2197,6 +2205,10 @@
 		AE23239116F78A17002C2082 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				27EFC3B2208BD0B800B7AF4E /* Tapjoy.embeddedframework */,
+				27EFC3AF208BD03B00B7AF4E /* AdColony.framework */,
+				27EFC3AC208BD02C00B7AF4E /* AppLovinSDK.framework */,
+				27EFC3A9208BD01A00B7AF4E /* FBAudienceNetwork.framework */,
 				27655B122080698E00E3B952 /* MoPubSDKFramework.framework */,
 				27655B10207F32CA00E3B952 /* libstdc++.tbd */,
 				27655B0D207F310F00E3B952 /* IronSource.framework */,
@@ -2482,7 +2494,6 @@
 				27655E24208083FD00E3B952 /* MPUnmutedBtn@3x.png in Resources */,
 				46B3342A19F075680078078A /* icon.png in Resources */,
 				46B3342B19F075680078078A /* MPAdEntryViewController.xib in Resources */,
-				27ED413D207B5320004C84EB /* TapjoyResources.bundle in Resources */,
 				27655E08208083FD00E3B952 /* MPCloseButtonX@2x.png in Resources */,
 				27655E26208083FD00E3B952 /* MRAID.bundle in Resources */,
 				46B3342C19F075680078078A /* icon@2x.png in Resources */,
@@ -2544,6 +2555,7 @@
 				AE8E1D501729AA460051FA6C /* white_button.png in Resources */,
 				4ADE5FCE1B4FE836004C3673 /* MPRewardedVideoAdDetailViewController.xib in Resources */,
 				27655E03208083FD00E3B952 /* MPCloseBtn@3x.png in Resources */,
+				27EFC3B8208BD0B800B7AF4E /* TapjoyResources.bundle in Resources */,
 				27655E11208083FD00E3B952 /* MPDAAIcon@3x.png in Resources */,
 				27655E1D208083FD00E3B952 /* MPPlayBtn@3x.png in Resources */,
 				2A5874FB1F9033E800E8CDFA /* LaunchScreen.storyboard in Resources */,
@@ -2677,7 +2689,6 @@
 				27655DF8208083FD00E3B952 /* MOPUBPlayerViewController.m in Sources */,
 				27655CCE208083FC00E3B952 /* MPActivityViewControllerHelper+TweetShare.m in Sources */,
 				27655CDC208083FC00E3B952 /* MPAdServerCommunicator.m in Sources */,
-				279A2BC9203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m in Sources */,
 				27655D24208083FC00E3B952 /* MPMRAIDInterstitialCustomEvent.m in Sources */,
 				27655DD6208083FD00E3B952 /* MPNativeCustomEvent.m in Sources */,
 				27B882F02016369200CECD64 /* MPMillennialBannerCustomEvent.m in Sources */,
@@ -2788,7 +2799,6 @@
 				27655D00208083FC00E3B952 /* MPNetworkManager.m in Sources */,
 				27655DC2208083FD00E3B952 /* MPCollectionViewAdPlacer.m in Sources */,
 				27655CE2208083FC00E3B952 /* MPClosableView.m in Sources */,
-				279A2BC7203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m in Sources */,
 				27655D5A208083FC00E3B952 /* MPInternalUtils.m in Sources */,
 				46B333A919F075680078078A /* MPManualAdViewController.m in Sources */,
 				27655D1C208083FC00E3B952 /* MPInstanceProvider.m in Sources */,
@@ -2840,7 +2850,6 @@
 				27655CF6208083FC00E3B952 /* MPXMLParser.m in Sources */,
 				27655D58208083FC00E3B952 /* MPIdentityProvider.m in Sources */,
 				27655DE4208083FD00E3B952 /* MOPUBActivityIndicatorView.m in Sources */,
-				279A2BCB203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m in Sources */,
 				469A15F11AC1F0BA00D6F0EF /* MPSampleAppLogReader.m in Sources */,
 				27655DD8208083FD00E3B952 /* MPServerAdPositioning.m in Sources */,
 				27B0E559206442D1004B7162 /* AppLovinNativeCustomEvent.m in Sources */,
@@ -2909,7 +2918,6 @@
 				27655CEB208083FC00E3B952 /* MPProgressOverlayView.m in Sources */,
 				AE23239F16F78A17002C2082 /* main.m in Sources */,
 				27655DAB208083FD00E3B952 /* MPNativeAdRendererImageHandler.m in Sources */,
-				279A2BC6203E2505009B8DB9 /* TapjoyGlobalMediationSettings.m in Sources */,
 				27655DB5208083FD00E3B952 /* MPNativePositionSource.m in Sources */,
 				27655D95208083FC00E3B952 /* MPInterstitialCustomEvent.m in Sources */,
 				27655DD5208083FD00E3B952 /* MPNativeCustomEvent.m in Sources */,
@@ -2965,7 +2973,6 @@
 				27655D2F208083FC00E3B952 /* MRController.m in Sources */,
 				27655D69208083FC00E3B952 /* MPVASTAd.m in Sources */,
 				27655CCF208083FC00E3B952 /* MPActivityViewControllerHelper.m in Sources */,
-				279A2BCA203E2505009B8DB9 /* TapjoyRewardedVideoCustomEvent.m in Sources */,
 				27655D49208083FC00E3B952 /* UIView+MPAdditions.m in Sources */,
 				27655D5F208083FC00E3B952 /* MPReachability.m in Sources */,
 				AE0021E61704C46400A220F0 /* MPManualAdViewController.m in Sources */,
@@ -3106,7 +3113,6 @@
 				27655D13208083FC00E3B952 /* MPInterstitialCustomEventAdapter.m in Sources */,
 				577DF03C19A28786001514D3 /* MPNativeAdPlacerPageViewController.m in Sources */,
 				27655CF9208083FC00E3B952 /* MPLogEvent.m in Sources */,
-				279A2BC8203E2505009B8DB9 /* TapjoyInterstitialCustomEvent.m in Sources */,
 				27655CF7208083FC00E3B952 /* MPLogEvent+NativeVideo.m in Sources */,
 				4A8DD10418C90620005E9389 /* MPNativeAdTableHeaderView.m in Sources */,
 				27655D6B208083FC00E3B952 /* MPVASTCompanionAd.m in Sources */,
@@ -3220,17 +3226,8 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdNetworkSupport/Facebook/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/AdColony/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Chartboost/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Millennial/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/GoogleAdMob/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Unity/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Tapjoy/SDK/Tapjoy.embeddedframework",
-					"$(PROJECT_DIR)/AdNetworkSupport/Vungle/SDK",
 					"$(PROJECT_DIR)/MoPubSDK/Viewability/MOAT",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Tapjoy.embeddedframework",
 				);
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3256,6 +3253,7 @@
 					"$(PROJECT_DIR)/FMBundle",
 				);
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-lc++",
 					"$(inherited)",
 				);
@@ -3279,17 +3277,8 @@
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/AdNetworkSupport/Facebook/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/AdColony/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Chartboost/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Millennial/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/GoogleAdMob/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Unity/SDK",
-					"$(PROJECT_DIR)/AdNetworkSupport/Tapjoy/SDK/Tapjoy.embeddedframework",
-					"$(PROJECT_DIR)/AdNetworkSupport/Vungle/SDK",
 					"$(PROJECT_DIR)/MoPubSDK/Viewability/MOAT",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Tapjoy.embeddedframework",
 				);
 				GCC_NO_COMMON_BLOCKS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -3315,6 +3304,7 @@
 					"$(PROJECT_DIR)/FMBundle",
 				);
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-lc++",
 					"$(inherited)",
 				);
@@ -3431,7 +3421,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/Viewability/MOAT",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Tapjoy.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoPubSampleApp/MoPubSampleApp-Prefix.pch";
@@ -3473,7 +3462,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoPubSDK/Viewability/MOAT",
 					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/Tapjoy.embeddedframework",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MoPubSampleApp/MoPubSampleApp-Prefix.pch";

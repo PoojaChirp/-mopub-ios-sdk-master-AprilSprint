@@ -10,7 +10,6 @@
 
 #import "MPInstanceProvider.h"
 #import "MPLogging.h"
-#import "MoPubMediationLogger.h"
 
 @interface MPInstanceProvider (FacebookBanners)
 
@@ -41,7 +40,7 @@
 
 @property (nonatomic, strong) FBAdView *fbAdView;
 
-@property (nonatomic, strong) MoPubMediationLogger *LOGGER;
+
 
 @end
 
@@ -59,7 +58,7 @@
      * to Facebook's constants and set the fbAdView's size to the intended size ("size" passed to this method).
      */
 
-    self.LOGGER = [[MoPubMediationLogger alloc] initWithNetworkType:Facebook AndAdFormat:Banner];
+    //self.LOGGER = [[MoPubMediationLogger alloc] initWithNetworkType:Facebook AndAdFormat:Banner];
 
 
    // id val = dictionary[""];
@@ -130,7 +129,7 @@
 - (void)adViewDidLoad:(FBAdView *)adView
 {
 //    MPLogInfo(@"Facebook banner ad did load");
-    [self.LOGGER log:@"AD_LOADED"];
+  //  [self.LOGGER log:@"AD_LOADED"];
     [self.delegate bannerCustomEvent:self didLoadAd:adView];
 }
 

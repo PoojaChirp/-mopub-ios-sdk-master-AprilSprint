@@ -35,7 +35,7 @@ NSDictionary *eventDictionary = nil;
 
 - (void)log :(Event) eventKey
 {
-    NSLog(@"%@-%@-%@", self.NETWORK_TYPE,self.ADFORMAT_TYPE, [eventDictionary objectForKey:(Event)eventKey]);
+    NSLog(@"%@-%@-%@", self.NETWORK_TYPE,self.ADFORMAT_TYPE,eventDictionary[@(eventKey)]);
     
 }
 
