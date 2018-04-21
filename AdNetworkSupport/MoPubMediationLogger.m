@@ -7,11 +7,10 @@
 #import "MoPubMediationLogger.h"
 
 
-//NSInteger const count = 0;
 @interface MoPubMediationLogger ()
-@property(nonatomic) Network *NETWORK_TYPE;
-@property(nonatomic) AdFormat *ADFORMAT_TYPE;
-@property (nonatomic)Event *EVENT_TYPE;
+@property(nonatomic) Network NETWORK_TYPE;
+@property(nonatomic) AdFormat ADFORMAT_TYPE;
+@property (nonatomic)Event EVENT_TYPE;
 
 @end
 
@@ -20,7 +19,7 @@
 
 NSDictionary *eventDictionary = nil;
 
--(instancetype)initWithNetworkType: (Network *)networkType  AndAdFormat:(AdFormat *)adFormat
+-(instancetype)initWithNetworkType: (Network)networkType  AndAdFormat:(AdFormat)adFormat
 {
 
     self = [super init];

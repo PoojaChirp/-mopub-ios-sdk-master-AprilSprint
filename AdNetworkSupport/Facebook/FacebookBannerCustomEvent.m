@@ -10,6 +10,7 @@
 
 #import "MPInstanceProvider.h"
 #import "MPLogging.h"
+#import "MoPubMediationLogger.h"
 
 @interface MPInstanceProvider (FacebookBanners)
 
@@ -20,6 +21,15 @@
 @end
 
 @implementation MPInstanceProvider (FacebookBanners)
+
+
+MoPubMediationLogger * LOG;
+
++ (void) load
+{
+    LOG = [[MoPubMediationLogger alloc]initWithNetworkType:Facebook AndAdFormat:Banner];
+}
+
 
 - (FBAdView *)buildFBAdViewWithPlacementID:(NSString *)placementID
                                       size:(FBAdSize)size
@@ -58,11 +68,7 @@
      * to Facebook's constants and set the fbAdView's size to the intended size ("size" passed to this method).
      */
 
-    //self.LOGGER = [[MoPubMediationLogger alloc] initWithNetworkType:Facebook AndAdFormat:Banner];
-
-
-   // id val = dictionary[""];
-  //  LOGGER.log(@"Some message");
+   
 
      [FBAdSettings addTestDevice:[FBAdSettings testDeviceHash]];
 
@@ -78,12 +84,14 @@
         fbAdSize = kFBAdSizeHeight50Banner;
     } else {
         MPLogError(@"Invalid size for Facebook banner ad");
+         [LOG log:AD_ERROR];
         [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:nil];
         return;
     }
 
     if (![info objectForKey:@"placement_id"]) {
         MPLogError(@"Placement ID is required for Facebook banner ad");
+        [LOG log:AD_ERROR];
         [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:nil];
         return;
     }
@@ -96,6 +104,7 @@
                                                                  delegate:self];
 
     if (!self.fbAdView) {
+         [LOG log:AD_ERROR];
         [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:nil];
         return;
     }
@@ -123,6 +132,7 @@
 - (void)adView:(FBAdView *)adView didFailWithError:(NSError *)error
 {
     MPLogInfo(@"Facebook banner failed to load with error: %@", error.localizedDescription);
+    [LOG log:AD_ERROR];
     [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:error];
 }
 
@@ -130,6 +140,7 @@
 {
 //    MPLogInfo(@"Facebook banner ad did load");
   //  [self.LOGGER log:@"AD_LOADED"];
+    [LOG log:AD_LOADED];
     [self.delegate bannerCustomEvent:self didLoadAd:adView];
 }
 

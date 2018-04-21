@@ -7,8 +7,6 @@
 
 @interface MoPubMediationLogger : NSObject
 
-//@property (nonatomic, strong) NSDictionary *eventDictionary;
-
 typedef enum {
     AdColony,
     AppLovin,
@@ -48,19 +46,11 @@ typedef enum {
 
 extern NSDictionary *eventDictionary;
 
-- (instancetype)initWithNetworkType:(Network *)networkType AndAdFormat:(AdFormat *)adFormat ;
+- (instancetype)initWithNetworkType:(Network )networkType AndAdFormat:(AdFormat )adFormat ;
 
 - (void)log:(Event) eventKey;
 
-
-#define kEventArray @"Requested.", @"Error. Check logs for the error's details.", @"Not loaded/cached. Try again.", @" Will show the ad.", @"Now playing/showing.", @"Cached/Loaded.", @"Logged an impression.",@"Clicked.",@"Dismissed.", @"Will dissis the ad.",@"Expired",@"Completed playing.", nil
-
 @end
-
-/*
- @"Requested.",@"Not loaded/cached. Try again.",@"Cached/Loaded.",@"Logged an impression.",@"Clicked.",@"Dismissed.",
- @"Completed playing. Rewarded the user.",@"Destroyed.",@"Error. Check logs for the error's details.",@"Expired",@"Cleaned up.",@"Now playing/showing." };
- */
 
 
 
