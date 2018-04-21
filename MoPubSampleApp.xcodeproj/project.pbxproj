@@ -607,9 +607,7 @@
 		BC789C1D1F7AD333001CE308 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE10920B170120E700812E6E /* Security.framework */; };
 		BCBD12FB1F268FE600BBC53D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4614B3F417E8D01D00812D2C /* CFNetwork.framework */; };
 		F406645FB7936C8CE2AB99C4 /* MoPubMediationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4066B178CAE828F0EA62778 /* MoPubMediationLogger.m */; };
-		F4066895C1BF112D60CCE267 /* MoPubMediationLoggerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F406627F561E5FA953834139 /* MoPubMediationLoggerConstants.m */; };
 		F4066EA6A4CF18D49F41C845 /* MoPubMediationLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F4066B178CAE828F0EA62778 /* MoPubMediationLogger.m */; };
-		F4066F42BFDE1912DC335C5D /* MoPubMediationLoggerConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F406627F561E5FA953834139 /* MoPubMediationLoggerConstants.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1239,8 +1237,6 @@
 		AED9E4DD16F7B00100EA71A7 /* MPSampleAppInstanceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPSampleAppInstanceProvider.m; sourceTree = "<group>"; };
 		E060FE6A1994000C00F4F33C /* MPNativeAdPlacerCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPNativeAdPlacerCollectionViewController.h; sourceTree = "<group>"; };
 		E060FE6B1994000C00F4F33C /* MPNativeAdPlacerCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPNativeAdPlacerCollectionViewController.m; sourceTree = "<group>"; };
-		F406627F561E5FA953834139 /* MoPubMediationLoggerConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubMediationLoggerConstants.m; sourceTree = "<group>"; };
-		F40663DE21C2736124C2E59B /* MoPubMediationLoggerConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubMediationLoggerConstants.h; sourceTree = "<group>"; };
 		F4066B178CAE828F0EA62778 /* MoPubMediationLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoPubMediationLogger.m; sourceTree = "<group>"; };
 		F4066E2CCE1795CC9CE87791 /* MoPubMediationLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoPubMediationLogger.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2169,8 +2165,6 @@
 				27B882DD2016369200CECD64 /* Millennial */,
 				F4066B178CAE828F0EA62778 /* MoPubMediationLogger.m */,
 				F4066E2CCE1795CC9CE87791 /* MoPubMediationLogger.h */,
-				F406627F561E5FA953834139 /* MoPubMediationLoggerConstants.m */,
-				F40663DE21C2736124C2E59B /* MoPubMediationLoggerConstants.h */,
 			);
 			path = AdNetworkSupport;
 			sourceTree = "<group>";
@@ -2418,7 +2412,7 @@
 		AE23238716F78A17002C2082 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = MoPub;
 				TargetAttributes = {
 					2795E5FA208AA35000BAFECF = {
@@ -2897,7 +2891,6 @@
 				27655DEC208083FD00E3B952 /* MOPUBNativeVideoAdAdapter.m in Sources */,
 				27B882EE2016369200CECD64 /* MillennialNativeCustomEvent.m in Sources */,
 				F406645FB7936C8CE2AB99C4 /* MoPubMediationLogger.m in Sources */,
-				F4066F42BFDE1912DC335C5D /* MoPubMediationLoggerConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3123,7 +3116,6 @@
 				27655B0B207F2BE500E3B952 /* IronSourceRewardedVideoCustomEvent.m in Sources */,
 				27655CE7208083FC00E3B952 /* MPFacebookKeywordProvider.m in Sources */,
 				F4066EA6A4CF18D49F41C845 /* MoPubMediationLogger.m in Sources */,
-				F4066895C1BF112D60CCE267 /* MoPubMediationLoggerConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3346,11 +3338,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -3394,11 +3388,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
