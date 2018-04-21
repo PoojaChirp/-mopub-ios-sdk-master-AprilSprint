@@ -45,6 +45,8 @@ typedef enum {
 } Event;
 
 extern NSDictionary *eventDictionary;
+extern NSDictionary *networkDictionary;
+extern NSDictionary *adFormatDictionary;
 
 - (instancetype)initWithNetworkType:(Network )networkType AndAdFormat:(AdFormat )adFormat ;
 

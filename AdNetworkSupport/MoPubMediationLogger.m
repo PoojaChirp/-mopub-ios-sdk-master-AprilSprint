@@ -8,8 +8,8 @@
 
 
 @interface MoPubMediationLogger ()
-@property(nonatomic) Network NETWORK_TYPE;
-@property(nonatomic) AdFormat ADFORMAT_TYPE;
+@property(nonatomic) NSString *NETWORK_TYPE;
+@property(nonatomic) NSString *ADFORMAT_TYPE;
 @property (nonatomic)Event EVENT_TYPE;
 
 @end
@@ -18,6 +18,8 @@
 
 
 NSDictionary *eventDictionary = nil;
+NSDictionary *networkDictionary = nil;
+NSDictionary *adFormatDictionary = nil;
 
 -(instancetype)initWithNetworkType: (Network)networkType  AndAdFormat:(AdFormat)adFormat
 {
@@ -25,8 +27,8 @@ NSDictionary *eventDictionary = nil;
     self = [super init];
     if(self)
     {
-        self.NETWORK_TYPE=networkType;
-        self.ADFORMAT_TYPE=adFormat;
+        self.NETWORK_TYPE=networkDictionary[@(networkType)];
+        self.ADFORMAT_TYPE=adFormatDictionary[@(adFormat)];
         
     }
     return self;
@@ -53,8 +55,28 @@ NSDictionary *eventDictionary = nil;
                         @(AD_WILLDISMISS) : @"Will dissis the ad.",
                         @(AD_EXPIRED) : @"Expired",
                         @(AD_COMPLETED) : @"Completed playing."
-                        
                         };
+    
+    networkDictionary = @{
+                          @(AdColony) : @"AdColony",
+                          @(AppLovin): @"AppLovin",
+                          @(AdMob) : @"AdMob",
+                          @(Chartboost) : @"Chartboost",
+                          @(Facebook) : @"Facebook",
+                          @(Flurry) : @"Flurry",
+                          @(IronSource) : @"IronSource",
+                          @(OneByAOL) : @"OneByAOL",
+                          @(Tapjoy) : @"Tapjoy",
+                          @(UnityAds) : @"UnityAds",
+                          @(Vungle) : @"Vungle"
+                          };
+    
+    adFormatDictionary =@{
+                          @(Banner) :@"Banner",
+                          @(Interstitial):@"Interstitial",
+                          @(RewardedVideo):@"RewardedVideo",
+                          @(Native):@"Native"
+                          };
 }
 
 @end
