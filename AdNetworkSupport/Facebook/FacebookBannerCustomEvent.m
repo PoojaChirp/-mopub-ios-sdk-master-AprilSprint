@@ -53,11 +53,11 @@
 
 MoPubMediationLogger * LOG;
 
-+ (void) load
-{
+//+ (void) load
+//{
 //        LOG = [[MoPubMediationLogger alloc]initWithNetworkType:Facebook AndAdFormat:Banner];
-    LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self class])];
-}
+    
+//}
 
 - (BOOL)enableAutomaticImpressionAndClickTracking
 {
@@ -75,7 +75,7 @@ MoPubMediationLogger * LOG;
 
      [FBAdSettings addTestDevice:[FBAdSettings testDeviceHash]];
 
-
+LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self class])];
     FBAdSize fbAdSize;
     if (CGSizeEqualToSize(size, kFBAdSize320x50.size)) {
         fbAdSize = kFBAdSize320x50;

@@ -5,6 +5,7 @@
 #import "AppLovinInterstitialCustomEvent.h"
 #import "MPError.h"
 #import "MPLogging.h"
+#import "MoPubMediationLogger.h"
 
 #if __has_include(<AppLovinSDK/AppLovinSDK.h>)
 #import <AppLovinSDK/AppLovinSDK.h>
@@ -25,6 +26,9 @@
 @end
 
 @implementation AppLovinInterstitialCustomEvent
+
+MoPubMediationLogger * LOG;
+
 static NSString *const kALMoPubMediationErrorDomain = @"com.applovin.sdk.mediation.mopub.errorDomain";
 
 // A dictionary of Zone -> Queue of `ALAd`s to be shared by instances of the custom event.
@@ -38,7 +42,7 @@ static NSObject *ALGlobalInterstitialAdsLock;
 + (void)initialize
 {
     [super initialize];
-    
+    LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self class])];
     ALGlobalInterstitialAds = [NSMutableDictionary dictionary];
     ALGlobalInterstitialAdsLock = [[NSObject alloc] init];
 }
@@ -48,7 +52,7 @@ static NSObject *ALGlobalInterstitialAdsLock;
 - (void)requestInterstitialWithCustomEventInfo:(NSDictionary *)info
 {
     [self log: @"Requesting AppLovin interstitial with info: %@", info];
-    
+     [LOG log:AD_REQUESTED];
     self.sdk = [self SDKFromCustomEventInfo: info];
     [self.sdk setPluginVersion: @"MoPub-Certified-2.1.0"];
     
