@@ -22,7 +22,21 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[MoPubMediationLogger log:]:MoPubMediationLogger.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "adFormatArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "+[MPRewardedVideoCustomEvent(Caching) allCachedNetworks]:MPRewardedVideoCustomEvent+Caching.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MoPubMediationLogger parseSdkAndAdFormat:]:MoPubMediationLogger.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[MoPubMediationLogger initWithNetworkType:AndAdFormat:]:MoPubMediationLogger.m">
       </ContextState>
       <ContextState
          contextName = "-[ChartboostRewardedVideoCustomEvent initializeSdkWithParameters:]:ChartboostRewardedVideoCustomEvent.m">

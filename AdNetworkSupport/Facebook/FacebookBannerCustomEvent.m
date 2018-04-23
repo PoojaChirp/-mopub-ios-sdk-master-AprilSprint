@@ -23,12 +23,6 @@
 @implementation MPInstanceProvider (FacebookBanners)
 
 
-MoPubMediationLogger * LOG;
-
-+ (void) load
-{
-    LOG = [[MoPubMediationLogger alloc]initWithNetworkType:Facebook AndAdFormat:Banner];
-}
 
 
 - (FBAdView *)buildFBAdViewWithPlacementID:(NSString *)placementID
@@ -55,6 +49,15 @@ MoPubMediationLogger * LOG;
 @end
 
 @implementation FacebookBannerCustomEvent
+
+
+MoPubMediationLogger * LOG;
+
++ (void) load
+{
+//        LOG = [[MoPubMediationLogger alloc]initWithNetworkType:Facebook AndAdFormat:Banner];
+    LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self class])];
+}
 
 - (BOOL)enableAutomaticImpressionAndClickTracking
 {

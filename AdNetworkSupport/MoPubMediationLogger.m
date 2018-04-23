@@ -40,8 +40,10 @@ NSArray *adFormatArray = nil;
 {
     
     self = [super init];
+
     if(self)
     {
+        [MoPubMediationLogger load];
         [self parseSdkAndAdFormat:className];
     }
     return self;
@@ -49,27 +51,18 @@ NSArray *adFormatArray = nil;
 
 -(void)parseSdkAndAdFormat:(NSString *)className
 {
-    NSString *networkName = nil;
-    NSString *adFormat = nil;
     for(NSString * item in adFormatArray){
-        NSRange range = [className rangeOfString:item];
-        if (range.location != NSNotFound) {
-            adFormat = item;
-            NSScanner *scan = [NSScanner scannerWithString:className];
-            [scan scanUpToString:item intoString:&networkName];
+        NSArray *substrings = [className componentsSeparatedByString:item];
+        if(substrings.count>0){
+            self.NETWORK_TYPE= [substrings objectAtIndex:0];
+            self.ADFORMAT_TYPE=item;
+            break;
         }
     }
-    if(networkName){
-        self.NETWORK_TYPE = networkName;
+    if(!self.NETWORK_TYPE){
+          self.NETWORK_TYPE = @"UNKOWN NETWORK";
     }
-    else{
-        self.NETWORK_TYPE = @"UNKOWN NETWORK";
-    }
-    
-    if(adFormat){
-        self.ADFORMAT_TYPE = networkName;
-    }
-    else{
+    if(!self.ADFORMAT_TYPE){
         self.ADFORMAT_TYPE = @"UNKOWN AD Format";
     }
 }
