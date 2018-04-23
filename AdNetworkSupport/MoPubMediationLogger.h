@@ -48,8 +48,10 @@ extern NSDictionary *eventDictionary;
 extern NSDictionary *networkDictionary;
 extern NSDictionary *adFormatDictionary;
 
-- (instancetype)initWithNetworkType:(Network )networkType AndAdFormat:(AdFormat )adFormat ;
+//@property (strong, nonatomic)NSDictionary *eventDictionary;
 
+- (instancetype)initWithNetworkType:(Network )networkType AndAdFormat:(AdFormat )adFormat ;
+- (instancetype)initWithClassName:(NSString *)className;
 - (void)log:(Event) eventKey;
 
 @end

@@ -21,6 +21,8 @@ NSDictionary *eventDictionary = nil;
 NSDictionary *networkDictionary = nil;
 NSDictionary *adFormatDictionary = nil;
 
+NSArray *adFormatArray = nil;
+
 -(instancetype)initWithNetworkType: (Network)networkType  AndAdFormat:(AdFormat)adFormat
 {
 
@@ -32,6 +34,44 @@ NSDictionary *adFormatDictionary = nil;
         
     }
     return self;
+}
+
+-(instancetype)initWithClassName:(NSString *)className
+{
+    
+    self = [super init];
+    if(self)
+    {
+        [self parseSdkAndAdFormat:className];
+    }
+    return self;
+}
+
+-(void)parseSdkAndAdFormat:(NSString *)className
+{
+    NSString *networkName = nil;
+    NSString *adFormat = nil;
+    for(NSString * item in adFormatArray){
+        NSRange range = [className rangeOfString:item];
+        if (range.location != NSNotFound) {
+            adFormat = item;
+            NSScanner *scan = [NSScanner scannerWithString:className];
+            [scan scanUpToString:item intoString:&networkName];
+        }
+    }
+    if(networkName){
+        self.NETWORK_TYPE = networkName;
+    }
+    else{
+        self.NETWORK_TYPE = @"UNKOWN NETWORK";
+    }
+    
+    if(adFormat){
+        self.ADFORMAT_TYPE = networkName;
+    }
+    else{
+        self.ADFORMAT_TYPE = @"UNKOWN AD Format";
+    }
 }
 
 - (void)log :(Event) eventKey
@@ -77,6 +117,8 @@ NSDictionary *adFormatDictionary = nil;
                           @(RewardedVideo):@"RewardedVideo",
                           @(Native):@"Native"
                           };
+    
+    adFormatArray = @[@"Banner",  @"Interstitial",  @"RewardedVideo",  @"Native",  @"Base",  @"CustomEvent", @"AdRenderer",  @"Utils",  @"Router", @"Listener",  @"AgentWrapper",  @"Shared"];
 }
 
 @end
