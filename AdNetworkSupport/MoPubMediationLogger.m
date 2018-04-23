@@ -53,7 +53,7 @@ NSArray *adFormatArray = nil;
 {
     for(NSString * item in adFormatArray){
         NSArray *substrings = [className componentsSeparatedByString:item];
-        if(substrings.count>0){
+        if(substrings.count==2){
             self.NETWORK_TYPE= [substrings objectAtIndex:0];
             self.ADFORMAT_TYPE=item;
             break;
