@@ -5,6 +5,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "MoPubMediationLogger.h"
+#import "MPLogging.h"
 
 
 @interface MoPubMediationLogger ()
@@ -23,6 +24,8 @@ NSDictionary *adFormatDictionary = nil;
 
 NSArray *adFormatArray = nil;
 
+// Type A implementation: Fetch network name and ad format directly from network adapter
+// Simple and elegant solution as the details are fetched during network intialization. Adaption of the code is also made easy
 -(instancetype)initWithNetworkType: (Network)networkType  AndAdFormat:(AdFormat)adFormat
 {
 
@@ -36,6 +39,8 @@ NSArray *adFormatArray = nil;
     return self;
 }
 
+//Type B implementation: Fetch network name and ad format from parsing the class names from the adapter
+// This process of fetching data is cumbersome and requires to build parsing logic
 -(instancetype)initWithClassName:(NSString *)className
 {
     
@@ -67,9 +72,10 @@ NSArray *adFormatArray = nil;
     }
 }
 
+//Log method to log network name, adformat and details of the log
 - (void)log :(Event) eventKey
 {
-    NSLog(@"%@-%@-%@", self.NETWORK_TYPE,self.ADFORMAT_TYPE,eventDictionary[@(eventKey)]);
+    MPLogInfo(@"%@-%@-%@", self.NETWORK_TYPE,self.ADFORMAT_TYPE,eventDictionary[@(eventKey)]);
     
 }
 
@@ -95,7 +101,7 @@ NSArray *adFormatArray = nil;
                           @(AppLovin): @"AppLovin",
                           @(AdMob) : @"AdMob",
                           @(Chartboost) : @"Chartboost",
-                          @(Facebook) : @"Facebook",
+                          @(Facebook) : @"FacebookAudienceNetwork",
                           @(Flurry) : @"Flurry",
                           @(IronSource) : @"IronSource",
                           @(OneByAOL) : @"OneByAOL",
