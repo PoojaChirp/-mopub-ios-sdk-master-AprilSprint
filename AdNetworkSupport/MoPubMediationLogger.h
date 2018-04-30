@@ -12,7 +12,7 @@ typedef enum {
     AppLovin,
     AdMob,
     Chartboost,
-    Facebook,
+    FacebookAudienceNetwork,
     Flurry,
     IronSource,
     OneByAOL,
@@ -48,7 +48,6 @@ extern NSDictionary *eventDictionary;
 extern NSDictionary *networkDictionary;
 extern NSDictionary *adFormatDictionary;
 
-//@property (strong, nonatomic)NSDictionary *eventDictionary;
 
 - (instancetype)initWithNetworkType:(Network )networkType AndAdFormat:(AdFormat )adFormat ;
 - (instancetype)initWithClassName:(NSString *)className;
