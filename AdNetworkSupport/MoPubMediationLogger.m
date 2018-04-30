@@ -11,7 +11,7 @@
 @interface MoPubMediationLogger ()
 @property(nonatomic) NSString *NETWORK_TYPE;
 @property(nonatomic) NSString *ADFORMAT_TYPE;
-@property (nonatomic)Event EVENT_TYPE;
+@property(nonatomic) Event EVENT_TYPE;
 
 @end
 
@@ -65,14 +65,14 @@ NSArray *adFormatArray = nil;
         }
     }
     if(!self.NETWORK_TYPE){
-          self.NETWORK_TYPE = @"UNKOWN NETWORK";
+          self.NETWORK_TYPE = @"Unknown Network";
     }
     if(!self.ADFORMAT_TYPE){
-        self.ADFORMAT_TYPE = @"UNKOWN AD Format";
+        self.ADFORMAT_TYPE = @"Unknown Adformat ";
     }
 }
 
-//Log method to log network name, adformat and details of the log
+//Logger method to log the details such as network name, ad format and callback information
 - (void)log :(Event) eventKey
 {
     MPLogInfo(@"%@-%@-%@", self.NETWORK_TYPE,self.ADFORMAT_TYPE,eventDictionary[@(eventKey)]);
@@ -91,7 +91,7 @@ NSArray *adFormatArray = nil;
                         @(AD_IMPRESSED) : @"Logged an impression.",
                         @(AD_CLICKED) : @"Clicked.",
                         @(AD_DISMISSED) : @"Dismissed.",
-                        @(AD_WILLDISMISS) : @"Will dissis the ad.",
+                        @(AD_WILLDISMISS) : @"Will dismiss the ad.",
                         @(AD_EXPIRED) : @"Expired",
                         @(AD_COMPLETED) : @"Completed playing."
                         };
@@ -117,7 +117,7 @@ NSArray *adFormatArray = nil;
                           @(Native):@"Native"
                           };
     
-    adFormatArray = @[@"Banner",  @"Interstitial",  @"RewardedVideo",  @"Native",  @"Base",  @"CustomEvent", @"AdRenderer",  @"Utils",  @"Router", @"Listener",  @"AgentWrapper",  @"Shared"];
+    adFormatArray = @[@"Banner",  @"Interstitial",  @"RewardedVideo",  @"Native"];
 }
 
 @end

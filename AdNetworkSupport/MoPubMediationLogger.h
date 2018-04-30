@@ -19,7 +19,7 @@ typedef enum {
     Tapjoy,
     UnityAds,
     Vungle
-} Network;
+} AdNetwork;
 
 
 typedef enum {

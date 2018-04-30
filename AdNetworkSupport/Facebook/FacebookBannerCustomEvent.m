@@ -70,12 +70,10 @@ MoPubMediationLogger * LOG;
      * Facebook Banner ads can accept arbitrary widths for given heights of 50 and 90. We convert these sizes
      * to Facebook's constants and set the fbAdView's size to the intended size ("size" passed to this method).
      */
-
-   
-
-     [FBAdSettings addTestDevice:[FBAdSettings testDeviceHash]];
-
-LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self class])];
+    
+ // Initialize the log method
+    LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self class])];
+    
     FBAdSize fbAdSize;
     if (CGSizeEqualToSize(size, kFBAdSize320x50.size)) {
         fbAdSize = kFBAdSize320x50;
@@ -87,14 +85,14 @@ LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self cla
         fbAdSize = kFBAdSizeHeight50Banner;
     } else {
         MPLogError(@"Invalid size for Facebook banner ad");
-         [LOG log:AD_ERROR];
+        // [LOG log:AD_ERROR];
         [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:nil];
         return;
     }
 
     if (![info objectForKey:@"placement_id"]) {
         MPLogError(@"Placement ID is required for Facebook banner ad");
-        [LOG log:AD_ERROR];
+       // [LOG log:AD_ERROR];
         [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:nil];
         return;
     }
@@ -107,7 +105,7 @@ LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self cla
                                                                  delegate:self];
 
     if (!self.fbAdView) {
-         [LOG log:AD_ERROR];
+       //  [LOG log:AD_ERROR];
         [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:nil];
         return;
     }
@@ -135,27 +133,29 @@ LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self cla
 - (void)adView:(FBAdView *)adView didFailWithError:(NSError *)error
 {
     MPLogInfo(@"Facebook banner failed to load with error: %@", error.localizedDescription);
-    [LOG log:AD_ERROR];
+    //[LOG log:AD_ERROR];
     [self.delegate bannerCustomEvent:self didFailToLoadAdWithError:error];
 }
 
 - (void)adViewDidLoad:(FBAdView *)adView
 {
 //    MPLogInfo(@"Facebook banner ad did load");
-  //  [self.LOGGER log:@"AD_LOADED"];
+  
     [LOG log:AD_LOADED];
     [self.delegate bannerCustomEvent:self didLoadAd:adView];
 }
 
 - (void)adViewWillLogImpression:(FBAdView *)adView
 {
-    MPLogInfo(@"Facebook banner ad did log impression");
+    //MPLogInfo(@"Facebook banner ad did log impression");
+    [LOG log:AD_IMPRESSED];
     [self.delegate trackImpression];
 }
 
 - (void)adViewDidClick:(FBAdView *)adView
 {
-    MPLogInfo(@"Facebook banner ad was clicked");
+    //MPLogInfo(@"Facebook banner ad was clicked");
+    [LOG log:AD_CLICKED]
     [self.delegate trackClick];
     [self.delegate bannerCustomEventWillBeginAction:self];
 }
@@ -163,6 +163,7 @@ LOG = [[MoPubMediationLogger alloc]initWithClassName:NSStringFromClass([self cla
 - (void)adViewDidFinishHandlingClick:(FBAdView *)adView
 {
     MPLogInfo(@"Facebook banner ad did finish handling click");
+    
     [self.delegate bannerCustomEventDidFinishAction:self];
 }
 
